@@ -1,7 +1,7 @@
 import React from "react";
 import { BsImage } from "react-icons/bs";
 
-const UploadImage = ({ handleFileUpload }) => {
+const Upload = ({ handleFileUpload }) => {
   return (
     <div className='relative border-2 border-dashed rounded-lg p-4 hover:bg-gray-50 transition-colors ease-linear'>
       <input
@@ -20,4 +20,4 @@ const UploadImage = ({ handleFileUpload }) => {
   );
 };
 
-export default UploadImage;
+export default Upload;
