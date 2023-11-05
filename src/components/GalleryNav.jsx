@@ -4,9 +4,9 @@ const GalleryNav = ({ selectImages, setSelectImages, handleDeleteFile }) => {
   return (
     <nav className="py-4 px-6 border-b-2">
       <article className="flex flex-row justify-between items-center">
-        <h1 className="text-2xl font-bold ">
+        <h1 className="text-2xl font-mono ">
           {selectImages.length === 0 ? (
-            <span className="font-bold text-2xl ">Gallery</span>
+            <span className="font-mono text-3xl ">Gallery</span>
           ) : (
             <label htmlFor="select" className="flex flex-row justify-between items-center gap-x-4">
               <input
@@ -14,7 +14,7 @@ const GalleryNav = ({ selectImages, setSelectImages, handleDeleteFile }) => {
                 name="select"
                 id="select"
                 checked={selectImages.length > 0}
-                className="w-5 h-5 to-blue-600 cursor-pointer"
+                className="w-5 h-5 to-yellow-600 cursor-pointer"
                 onChange={() => setSelectImages([])}
               />
               {selectImages.length} Files Selected

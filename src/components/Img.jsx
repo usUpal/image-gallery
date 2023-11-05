@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import images from "../../data.json";
+import images from "../../images.json";
 import GalleryNav from "./GalleryNav";
 import ImageGallery from "./ImageGallery";
-import UploadImage from "./UploadImage";
+import UploadImage from "./Upload";
 
 const Img = () => {
   const [myImages, setMyImages] = useState(images);
