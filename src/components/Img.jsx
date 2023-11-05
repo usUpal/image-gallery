@@ -61,7 +61,7 @@ const Img = () => {
 
   return (
     <main className=" flex flex-row items-center justify-center md:p-0 p-5">
-      <section className="lg:max-w-full md:w-3/4 w-full bg-white rounded-lg shadow">
+      <section className="lg:max-w-full md:w-3/4 w-full bg-red rounded-lg shadow">
         <GalleryNav selectImages={selectImages} setSelectImages={setSelectImages} handleDeleteFile={handleDeleteFile} />
         <section className="m-10 p-2">
           <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 gap-6" onDragOver={handleDragOver}>

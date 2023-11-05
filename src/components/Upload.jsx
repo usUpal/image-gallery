@@ -3,7 +3,7 @@ import { BsImage } from "react-icons/bs";
 
 const Upload = ({ handleFileUpload }) => {
   return (
-    <div className='relative border-2 border-dashed rounded-lg p-4 hover:bg-gray-50 transition-colors ease-linear'>
+    <div className='relative border-2 border-solid rounded-lg p-4 hover:bg-gray-50 transition-colors ease-linear'>
       <input
         type='file'
         multiple
@@ -13,8 +13,8 @@ const Upload = ({ handleFileUpload }) => {
         onChange={handleFileUpload}
       />
       <div className='h-full w-full flex flex-col justify-center items-center gap-y-4'>
-        <BsImage height='48' width='48' />
-        <span className='whitespace-nowrap text-lg'>Add Images</span>
+        <BsImage height='64' width='64' />
+        <span>Add Image</span>
       </div>
     </div>
   );
