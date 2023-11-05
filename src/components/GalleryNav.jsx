@@ -3,11 +3,11 @@ import { FaTrash } from "react-icons/fa";
 
 const GalleryNav = ({ selectImages, setSelectImages, handleDeleteFile }) => {
   return (
-    <nav className='py-4 px-6 border-b-2'>
+    <nav className='py-4 px-6'>
       <div className='flex flex-row justify-between items-center'>
-        <h1 className='text-2xl font-mono '>
+        <h1 className='text-2xl font-sans '>
           {selectImages.length === 0 ? (
-            <span className='font-mono text-2xl '>Gallery</span>
+            <span className='font-sans text-2xl '>Gallery</span>
           ) : (
             <label
               htmlFor='select'
